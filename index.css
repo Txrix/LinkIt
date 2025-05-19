@@ -211,3 +211,89 @@ footer {
 .footer-right button:hover {
     background-color: #007a8c;
 }
+
+
+
+
+
+
+
+
+.services {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.service-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-item img {
+    width: 25%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-text {
+    width: 45%;
+}
+
+.service-text h3 {
+    color: #0097b2;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.image-container {
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.contact-btn {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background-color: #0097b2;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.image-container:hover .contact-btn {
+    bottom: 0;
+    opacity: 1;
+}
+
+.image-container:hover img {
+    filter: brightness(0.8);
+}
